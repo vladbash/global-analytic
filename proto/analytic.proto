@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package analytic;
+
+service AnalyticService {
+    rpc Track (EventParams) returns (Empty) {}
+}
+
+message Empty {}
+
+message EventParams {
+    string category = 1;
+    string action = 2;
+    string label = 3;
+    string value = 4;
+}
