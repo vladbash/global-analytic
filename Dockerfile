@@ -11,4 +11,7 @@ RUN npm i
 
 COPY . /app/
 
+EXPOSE 80
+EXPOSE 50051
+
 CMD ["node", "server.js"]
