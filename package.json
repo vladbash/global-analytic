@@ -1,0 +1,28 @@
+{
+  "name": "global-analytic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladbash/global-analytic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladbash/global-analytic/issues"
+  },
+  "homepage": "https://github.com/vladbash/global-analytic#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^9.4.0",
+    "axios": "^0.20.0",
+    "config": "^3.3.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "ramda": "^0.27.1"
+  }
+}
