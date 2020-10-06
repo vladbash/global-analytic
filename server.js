@@ -1,5 +1,5 @@
 const http = require("./app/http");
-const grpc = require("./app/grpc");
+// const grpc = require("./app/grpc");
 
 http.init();
-grpc.init();
+// grpc.init();
