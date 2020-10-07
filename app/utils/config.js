@@ -3,6 +3,5 @@ module.exports = {
     ports: {
         http: 80,
         grpc: 50051
-    },
-    analyticUrl: 'https://www.google-analytics.com'
+    }
 };

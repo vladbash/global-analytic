@@ -15,7 +15,7 @@ router.post("/track", async ctx => {
         label,
         value
     } = R.pathOr({})(['request', 'body'])(ctx);
-    ctx.body = proxy.track(category, action, label, value);
+    ctx.body = await proxy.track(category, action, label, value);
 });
 
 const init = () => {
@@ -25,7 +25,10 @@ const init = () => {
     app.use(cors());
     app.use(router.routes());
 
-    app.listen(config.ports.http, () => console.log(`Running on :${config.ports.http}`));
+    app.listen(config.ports.http, () => {
+        console.log(`Configs: ${JSON.stringify(config)}`);
+        console.log(`Running on :${config.ports.http}`)
+    });
 };
 
 module.exports = {
